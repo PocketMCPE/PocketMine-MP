@@ -1,3 +1,3 @@
-# Features:
-- [X] **Fix item duplication in hoppers**
-- [ ] **MultiVersion 0.14.x and 0.15.x**
+## 🚀 Features:
+- ✅ **Fixed item duplication bug in hoppers**  
+- ⏳ **Planned: MultiVersion support for 0.14.x and 0.15.x**  
