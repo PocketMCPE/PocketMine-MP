@@ -3314,8 +3314,8 @@ class Player extends Human implements CommandSender, InventoryHolder, ChunkLoade
 					break;
 				}
 
-				if($packet->slot < 0){
-					break;
+                if (!isset($packet->slot) || $packet->slot < 0) {
+                    break;
 				}
 
 				if($packet->windowid === 0){ //Our inventory
