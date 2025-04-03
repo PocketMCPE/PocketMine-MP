@@ -354,7 +354,6 @@ class Server{
 	public $playerMsgType = self::PLAYER_MSG_TYPE_MESSAGE;
 	public $playerLoginMsg = "";
 	public $playerLogoutMsg = "";
-	public $antiFly = false;
 	public $asyncChunkRequest = true;
 	public $recipesFromJson = false;
 	public $creativeItemsFromJson = false;
@@ -1543,7 +1542,6 @@ class Server{
 		$this->allowFrequencyPulse = $this->getAdvancedProperty("redstone.allow-frequency-pulse", false);
 		$this->pulseFrequency = $this->getAdvancedProperty("redstone.pulse-frequency", 20);
 		$this->getLogger()->setWrite(!$this->getAdvancedProperty("server.disable-log", false));
-		$this->antiFly = $this->getAdvancedProperty("server.anti-fly", true);
 		$this->asyncChunkRequest = $this->getAdvancedProperty("server.async-chunk-request", true);
 		$this->recipesFromJson = $this->getAdvancedProperty("server.recipes-from-json", false);
 		$this->creativeItemsFromJson = $this->getAdvancedProperty("server.creative-items-from-json", false);

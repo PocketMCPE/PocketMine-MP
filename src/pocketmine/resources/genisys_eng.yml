@@ -44,8 +44,6 @@ server:
  allow-snow-golem: false
  #Choose if disable server.log
  disable-log: false
- #Choose if enable auto anti fly
- anti-fly: true
  #Choose if enable async chunks request
  async-chunk-request: true
  #Choose how to remind player when a player join

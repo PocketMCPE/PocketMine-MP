@@ -44,8 +44,6 @@ server:
  allow-snow-golem: false
  #是否禁用server.log
  disable-log: false
- #是否启用反飞行作弊
- anti-fly: true
  #是否启用异步方式发送区块
  async-chunk-request: true
  #玩家进出服务器消息提醒方式。0为Message，1为Tip，2为Popup
