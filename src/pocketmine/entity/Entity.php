@@ -312,6 +312,25 @@ abstract class Entity extends Location implements Metadatable{
 
 	}
 
+    public static function createBaseNBT(Vector3 $position, Vector3 $motion, float $yaw, float $pitch){
+        return new CompoundTag("", [
+            "Pos" => new ListTag("Pos", [
+                new DoubleTag("", $position->x),
+                new DoubleTag("", $position->y),
+                new DoubleTag("", $position->z)
+            ]),
+            "Motion" => new ListTag("Motion", [
+                new DoubleTag("", $motion->x),
+                new DoubleTag("", $motion->y),
+                new DoubleTag("", $motion->z)
+            ]),
+            "Rotation" => new ListTag("Rotation", [
+                new FloatTag("", $yaw),
+                new FloatTag("", $pitch),
+            ]),
+        ]);
+    }
+
 	/**
 	 * @return int
 	 */

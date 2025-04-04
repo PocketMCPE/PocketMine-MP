@@ -36,12 +36,12 @@ class AnvilInventory extends TemporaryInventory{
 		parent::__construct(new FakeBlockMenu($this, $pos), InventoryType::get(InventoryType::ANVIL));
 	}
 
-	/**
-	 * @return FakeBlockMenu
-	 */
-	public function getHolder(){
-		return $this->holder;
-	}
+    /**
+     * @return FakeBlockMenu|InventoryHolder
+     */
+    public function getHolder(){
+        return $this->holder;
+    }
 
 	public function getResultSlotIndex(){
 		return self::RESULT;

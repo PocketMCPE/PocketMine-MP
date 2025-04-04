@@ -1491,7 +1491,7 @@ class Player extends Human implements CommandSender, InventoryHolder, ChunkLoade
 	}
 
 	protected function checkNearEntities($tickDiff){
-		foreach($this->level->getNearbyEntities($this->boundingBox->grow(0.5, 0.5, 0.5), $this) as $entity){
+		foreach($this->level->getNearbyEntities($this->boundingBox->grow(1, 1, 1), $this) as $entity){
 			$entity->scheduleUpdate();
 
 			if(!$entity->isAlive()){
